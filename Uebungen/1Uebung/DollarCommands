@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "$$ D$ Momentane bashid"
+echo "$# D# Argumentnuber of command line"
+echo "$? D? Exist status of last command"
+echo "$! D! pid of last job"
+echo "$@ D@ kommandozeilen arg ausgeschrieben"
+echo "$- D- last flag passed by script"
+echo "$_ D_ Last parameter of last command"
+
+echo "$SHELL for current shell"
+
+echo "gcc version: gcc --version"
+
+echo gdb --version
+
