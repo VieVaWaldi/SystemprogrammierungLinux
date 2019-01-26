@@ -1,0 +1,27 @@
+fileaccessmode / flags
+dateiarbeit
+schreiben lesen
+spezielle dateien geraete
+zufallszahlen!
+wie reagieren geschlossene dateien
+
+Was passiert bei dem siganl ...
+
+zombies erzeugen, killen.
+
+konzepte fork exec, worauf achten. 
+
+methoden bennen koennen und sagen was sie macht (nicht zwingedn mit paramter), 
+zB was folgt symlink und was nicht.
+
+Aufgabe koennen evtl mit systemcalls oder cmdcommands geloest werden.
+
+lle dateitypen ca x6
+
+was ist umask
+effektive reale Benutzerkennung
+pruefen von sudo
+
+struct namen und default typen, aber wsh nicht und auf keinen fall alles. Schreib hin ich muss nachkucken.
+
+

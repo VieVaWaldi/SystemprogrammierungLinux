@@ -27,7 +27,7 @@ int traverse(const char* pfad, const struct stat *sb, int typeflags) {
     static char erstemal = 1;
     static int ausgangs_tiefe = 0;
 
-    if( !erstemal ) {       // hier rein wen nreg Datei
+    if( !erstemal ) {       // hier rein wenn reg Datei
         
         for(int i=1;i < dir_tiefe(pfad) - ausgangs_tiefe; ++i) {
            printf("%4c|", ' '); 

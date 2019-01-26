@@ -1,0 +1,4268 @@
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <getopt.h>
+
+int main(int argc, char **argv) {
+
+    char *short_opt = "f:";
+    char *file = "filedes.c";
+
+    if(getopt(argc, argv, short_opt) != -1) {
+        if(optarg != null) {
+            file = optarg;
+        }
+    }
+    
+    int ch = open(file, o_rdwr);       
+    if( ch == -1 ) {
+        printf("wrong filename");
+        exit(1);
+    }
+
+    struct stat mstat;
+    fstat(ch, &mstat);
+    int sz = mstat.st_size;
+
+    // fseek(ch, 0l, seek_end);
+    // int sz = ftell(ch);
+    // fseek(ch, 0l, seek_set);
+    
+    char *buff = (char*) malloc(sizeof(char) * sz);
+    read(ch, buff, sz);
+
+    int i = 0;
+    do {
+        printf("%c", buff[i]);
+        i++;
+    } while(buff[i]);
+
+    return exit_success;
+}
