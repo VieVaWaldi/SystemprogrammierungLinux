@@ -4,11 +4,13 @@
 
 int main(void) {
 
-    int fd = open("error.log", O_RDWR);
+    int fd = open("lol.log", O_RDWR);
 
-    lseek(fd, 10, SEEK_END);
+    lseek(fd, 50, SEEK_END);
 
     char *buf = "fdsa\n";
+
+    write(fd, buf, sizeof(buf));
 
     dup2(STDOUT_FILENO, fd);
     
